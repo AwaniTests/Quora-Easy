@@ -1,0 +1,37 @@
+h1{
+    color: brown;
+}
+
+
+div{
+    border: 2px ridge black;
+    border-radius:10px;
+    background-color: cyan;
+    overflow: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+h3{
+    color: rgb(255, 0, 64);
+    margin: 0;
+    padding: 0;
+}
+
+h4{
+    margin: 5px;
+    padding: 5px;
+    border: 1px groove gray;
+}
+
+#icon{
+    margin:0 0 0 20px;
+    padding: 0 0 0px 10px;
+    font-size: 30px;
+    
+}
+
+#delete{
+    margin: 20px;
+    display: inline;
+}

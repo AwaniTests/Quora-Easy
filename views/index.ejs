@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All posts</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <h1>Quora Posts</h1>
+    <% for(post of posts){%>
+        <div>
+            <h3>@<%=post.username%></h3>
+            <h4><%=post.content%></h4>
+            <a href="http://localhost:8080/posts/<%=post.id%>">Detail</a>
+            <a href="http://localhost:8080/posts/<%=post.id%>/edit" ><i class="material-symbols-outlined" id="icon">edit_square</i></a>
+            
+            <form method="post" action="/posts/<%=post.id%>/?_method=DELETE" id="delete">
+                <button>Delete</button>
+            </form>
+        </div>
+    <%}%>
+    <form method="get" action="/posts/new">
+        <button>Add New Post</button>
+    </form>
+
+</body>
+</html>
